@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+//Crie um Array de inteiros com 3 elementos e imprima a soma dos valores armazenados no Array.
+
+func main() {
+	var inteiros = [3]int{5, 10, 15}
+	fmt.Print("A soma dos números inteiros é de:", inteiros[0]+inteiros[1]+inteiros[2])
+}
