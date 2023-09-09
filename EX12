@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+//Crie um Array de inteiros com 5 elementos.
+//Em seguida, crie um novo Slice que contenha apenas os elementos do Array que são múltiplos de 3.
+//Imprima o novo Slice.
+
+func main() {
+	var numeros = [5]int{2, 4, 6, 8, 12}
+	var numeros3 [5]int
+	var i int
+	for i = 0; i < 5; i++ {
+
+		if numeros[i]%3 == 0 {
+			numeros3[i] = numeros[i]
+		}
+	}
+
+	fmt.Println("Os números divísiveis por 3 da lista são", numeros3)
+}
