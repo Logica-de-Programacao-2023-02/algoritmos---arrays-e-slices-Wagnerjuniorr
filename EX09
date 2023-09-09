@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+//Crie um Array de floats com 6 elementos.
+//Solicite ao usuário que informe um número que será adicionado em todas as posições do Array.
+//Imprima o Array resultante.
+
+func main() {
+	var números = [6]int{1, 2, 3, 4, 5, 6}
+	var x, i int
+	fmt.Print("Me fale um numero para ser adicionano a lista")
+	fmt.Scan(&x)
+	for i = 0; i < 6; i++ {
+		números[i] = x
+	}
+	fmt.Println("A sua nova lista é:", números)
+}
