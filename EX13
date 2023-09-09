@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+//Crie um Array de inteiros com 7 elementos.
+//Solicite ao usuário que informe um número que será adicionado ao primeiro e ao último elemento do Array.
+//Imprima o Array resultante.
+
+func main() {
+	numeros := [7]int{}
+	var x, y int
+	fmt.Println("Me fale um numero para ser adicionado ao começo da lista")
+	fmt.Scan(&x)
+	fmt.Println("Me fale um numero para ser adicionado ao fim da lista")
+	fmt.Scan(&y)
+	numeros[0] = x
+	numeros[6] = y
+	fmt.Println("Com isso, a lista ficará assim:", numeros)
+}
