@@ -8,7 +8,7 @@ import "fmt"
 
 func main() {
 	var numeros = [5]int{2, 4, 6, 8, 12}
-	var numeros3 [5]int
+	var numeros3 = []int{0, 0, 0, 0, 0}
 	var i int
 	for i = 0; i < 5; i++ {
 
