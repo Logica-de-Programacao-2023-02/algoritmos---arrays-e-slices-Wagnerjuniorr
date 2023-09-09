@@ -1,0 +1,24 @@
+package main
+
+import "fmt"
+
+//Crie um Array bidimensional de inteiros com 2 linhas e 3 colunas.
+//Em seguida, solicite ao usuário que informe um índice de linha e outro de coluna
+//imprima o valor armazenado nessa posição da matriz.
+
+func main() {
+	var numeros = [2][3]int{{10, 20, 30}, {40, 50, 60}}
+
+	var x, y, i, l int
+	fmt.Print("Me fale um índice de linha")
+	fmt.Scan(&x)
+	fmt.Print("Me fale um índice de coluna")
+	fmt.Scan(&y)
+	for i = 0; i < 2; i++ {
+		for l = 0; l < 3; l++ {
+			if numeros[i][l] == numeros[x][y] {
+				fmt.Println(numeros[i][l])
+			}
+		}
+	}
+}
