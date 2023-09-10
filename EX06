@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+
+//Crie um Array de inteiros com 10 elementos.
+//Em seguida, solicite ao usuário que informe um valor e verifique se esse valor está presente no Array.
+//Imprima o resultado da busca.
+
+func main() {
+	var numeros = [10]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	var x, y int
+	fmt.Print("Informe um valor:")
+	fmt.Scan(&x)
+	for y = 0; y < 10; y++ {
+		if numeros[y] == x {
+			fmt.Println("O numero", x, "é igual ao numero da posição:", y+1)
+			break
+		} else if numeros[y] != x {
+			fmt.Println("O numero", x, " não se encontra nessa posição na lista")
+		}
+	}
+}

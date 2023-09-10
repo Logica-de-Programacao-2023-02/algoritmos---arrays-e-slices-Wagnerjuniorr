@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+// Crie um Slice de inteiros com tamanho 8
+// solicite ao usuário que informe dois índices de elementos que deverão ser trocados de posição.
+// Imprima o Slice resultante.
+func main() {
+	var numeros = []int{10, 20, 30, 40, 50, 60, 70, 80}
+	var x, y, z int
+	fmt.Print("Me fale uma posição na lista")
+	fmt.Scan(&x)
+	fmt.Print("Me fale uma posição na lista")
+	fmt.Scan(&y)
+	z = numeros[x]
+	numeros[x] = numeros[y]
+	numeros[y] = z
+	fmt.Println("A sua nova lista com os índices invertidos será:", numeros)
+}

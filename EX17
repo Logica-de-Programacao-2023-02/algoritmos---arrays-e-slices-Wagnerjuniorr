@@ -1,0 +1,17 @@
+ackage main
+
+import "fmt"
+
+//Crie um Array de inteiros com 10 elementos.
+//Calcule e imprima a soma dos elementos nas posições pares do Array.
+
+func main() {
+	var num = [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	var i, x int
+	for i = 0; i < len(num); i++ {
+		if i%2 == 0 {
+			x += num[i]
+		}
+	}
+	fmt.Println(x)
+}

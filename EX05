@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+//Crie um Array bidimensional de inteiros com 3 linhas e 2 colunas.
+//Solicite ao usuário que informe os valores de cada elemento da matriz.
+//Em seguida, imprima a matriz resultante
+
+func main() {
+	var matriz [3][2]int
+	var i int
+
+	for i = 0; i < 1; i++ {
+		fmt.Println("Me fale um elemento para cada posição na matriz")
+		fmt.Scan(&matriz[0][0], &matriz[0][1], &matriz[1][0], &matriz[1][1], &matriz[2][0], &matriz[2][1])
+	}
+	fmt.Println("A matriz resultante é:", matriz)
+
+}
