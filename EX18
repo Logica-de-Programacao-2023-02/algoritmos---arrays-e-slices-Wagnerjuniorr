@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var x, prim, p int
+	prim = 0
+	var num = []int{}
+	for p = 0; p < 10; p++ {
+		fmt.Print("Digite números inteiros positivos, " +
+			"números primos serão adicionados a lista")
+		fmt.Scanln(&x)
+
+		for i := 2; i < x/2; i++ {
+			if x%i == 0 {
+				prim++
+				break
+			}
+		}
+
+		if prim == 0 && x != 1 {
+			num = append(num, x)
+
+		} else {
+			fmt.Println(x, " não é primo")
+
+		}
+	}
+	fmt.Println("A sua lista com todos os números primos ficará:", num)
+}
