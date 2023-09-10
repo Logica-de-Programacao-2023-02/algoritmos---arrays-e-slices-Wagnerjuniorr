@@ -1,0 +1,28 @@
+package main
+
+import (
+	"fmt"
+)
+
+//Crie um programa que leia um array de inteiros e verifique se ele está ordenado em ordem crescente.
+
+func main() {
+	var num = [5]int{}
+	var x, i int
+	for i = 0; i < len(num); i++ {
+		fmt.Print("Me fale um numero aleatório para ser adicionado a lista")
+		fmt.Scan(&x)
+		num[i] = x
+		if x == 0 {
+			break
+		}
+	}
+	for i = 0; i < len(num); i++ {
+		if num[i] < num[i+1] {
+			fmt.Println("A lista", num, "está na oredem crescente")
+		} else if num[i] > num[i+1] {
+			fmt.Println("A lista", num, "não está na ordem crescente")
+			break
+		}
+	}
+}
