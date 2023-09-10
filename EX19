@@ -1,0 +1,33 @@
+package main
+
+import "fmt"
+
+//Faça um programa que leia dois arrays de inteiros de tamanho n
+//gere um terceiro array que seja a soma dos dois primeiros.
+
+func main() {
+	var num1 = [10]int{}
+	var num2 = [10]int{}
+	var num3 = [10]int{}
+	var i, x, y int
+	for i = 0; i < len(num1); i++ {
+		fmt.Print("Me fale um número para ser adicionado na array 1 =")
+		fmt.Scan(&x)
+
+		if x != 0 {
+			num1[i] = x
+		}
+	}
+	for i = 0; i < len(num2); i++ {
+		fmt.Print("Me fale um número para ser adicionado na array 2 =")
+		fmt.Scan(&y)
+
+		if x != 0 {
+			num2[i] = y
+		}
+	}
+	for i = 0; i < 10; i++ {
+		num3[i] = num1[i] + num2[i]
+	}
+	fmt.Println("A soma das duas arrays ficará:", num3)
+}
