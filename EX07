@@ -8,7 +8,7 @@ import "fmt"
 //Imprima o Slice resultante.
 
 func main() {
-	var numeros = [5]int{}
+	var numeros = [5]int{1, 2, 3, 4, 5}
 	var i, x int
 	fmt.Print("Me informe um numero inteiro")
 	fmt.Scan(&x)
@@ -22,6 +22,6 @@ func main() {
 			break
 		}
 	}
-	fmt.Println("Com a adição do numero, a lista fica:", numeros)
+	fmt.Println("Com a adição ou não do numero, a lista fica:", numeros)
 
 }
